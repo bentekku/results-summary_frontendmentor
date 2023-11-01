@@ -46,6 +46,19 @@ body {
   color: hsl(0, 100%, 67%);
 }
 
+.continue {
+  padding: 12px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 16px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 24px;
+}
+.continue:active {
+  background-image: linear-gradient(hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+
 .container {
   height: 100%;
   width: 100%;

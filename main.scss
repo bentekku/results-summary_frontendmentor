@@ -25,7 +25,6 @@ $neutral-dark-gray-blue: hsl(224, 30%, 27%);
   padding: 0;
   box-sizing: border-box;
   font-family: "Hanken Grotesk", sans-serif;
-  // outline: 1px solid red;
 }
 
 body {
@@ -60,6 +59,22 @@ body {
   a,
   a:visited {
     color: $txt-light-red;
+  }
+}
+
+.continue {
+  padding: 12px;
+  border: none;
+  color: $neutral-white;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: $neutral-dark-gray-blue;
+  border-radius: 24px;
+  &:active {
+    background-image: linear-gradient(
+      $grad-bg-light-slate-blue 0%,
+      $grad-bg-light-royal-blue 100%
+    );
   }
 }
 
