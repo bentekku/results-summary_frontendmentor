@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.attribution {
+  background-color: hsl(224, 30%, 27%);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: hsl(0, 0%, 100%);
+  padding: 7px;
+  border-radius: 12px;
+}
+.attribution a,
+.attribution a:visited {
+  color: hsl(0, 100%, 67%);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .card .left:not(.stats > * .left) {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.container .card .left:not(.stats > * .left) h1.slight-transparent {
+  font-size: 17px;
+}
+.container .card .left:not(.stats > * .left) .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.container .card .left:not(.stats > * .left) .circle .dark {
+  font-size: 36px;
+  font-weight: 700;
+}
+.container .card .left:not(.stats > * .left) h1.dark {
+  font-weight: 700;
+  font-size: 21px;
+}
+.container .card .left:not(.stats > * .left) .slight-transparent {
+  color: hsl(0, 0%, 100%);
+  opacity: 0.69;
+}
+.container .card .left:not(.stats > * .left) p {
+  width: 76%;
+  text-align: center;
+}
+.container .card .right:not(.stats > * .right) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+}
+.container .card .right:not(.stats > * .right) h1.dark {
+  font-weight: 700;
+  font-size: 21px;
+  margin: 0.25rem;
+}
+.container .card .right:not(.stats > * .right) .info-card {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.35rem;
+}
+.container .card .right:not(.stats > * .right) .info-card .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card .right:not(.stats > * .right) .info-card .left span:nth-of-type(1) {
+  margin-left: 0.35rem;
+}
+.container .card .right:not(.stats > * .right) .info-card .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+.container .card .right:not(.stats > * .right) .info-card .right .slight-transparent {
+  opacity: 0.69;
+}
+@media screen and (max-width: 768px) {
+  .container .card {
+    width: 100%;
+    height: 100%;
+  }
+  .container .card .left:not(.stats > * .left) {
+    height: 40%;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  .container .attribution {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px hsl(221, 100%, 96%);
+    width: 810px;
+    height: 480px;
+  }
+  .container .card .left:not(.stats > * .left) {
+    flex: 1;
+    border-radius: 32px;
+  }
+  .container .card .left:not(.stats > * .left) .circle {
+    height: 160px;
+    width: 160px;
+  }
+  .container .card .left:not(.stats > * .left) .circle .dark {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  .container .card .right:not(.stats > * .right) {
+    flex: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
